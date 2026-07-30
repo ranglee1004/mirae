@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>미래에셋증권 운영 통합 대시보드</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <aside class="sidebar" aria-label="주요 메뉴">
+    <a class="brand" href="#" aria-label="미래에셋증권 홈">
+      <span class="brand-main">MIRAE</span>
+      <span class="brand-sub">ASSET</span>
+    </a>
+    <nav class="side-nav">
+      <button class="nav-item active" data-tooltip="대시보드" aria-label="대시보드">
+        <span class="icon">▦</span>
+      </button>
+      <button class="nav-item" data-tooltip="시스템 운영" aria-label="시스템 운영">
+        <span class="icon">▣</span>
+      </button>
+      <button class="nav-item" data-tooltip="고객·거래 현황" aria-label="고객·거래 현황">
+        <span class="icon">♧</span>
+      </button>
+      <button class="nav-item" data-tooltip="프로젝트 현황" aria-label="프로젝트 현황">
+        <span class="icon">▤</span>
+      </button>
+      <button class="nav-item" data-tooltip="조직·인사 현황" aria-label="조직·인사 현황">
+        <span class="icon">♙</span>
+      </button>
+      <button class="nav-item" data-tooltip="보고서" aria-label="보고서">
+        <span class="icon">▥</span>
+      </button>
+      <button class="nav-item" data-tooltip="알림센터" aria-label="알림센터">
+        <span class="icon">♧</span>
+      </button>
+      <button class="nav-item" data-tooltip="환경설정" aria-label="환경설정">
+        <span class="icon">⚙</span>
+      </button>
+    </nav>
+    <button class="nav-item logout" data-tooltip="로그아웃" aria-label="로그아웃">
+      <span class="icon">⇥</span>
+    </button>
+  </aside>
+
+  <main class="app-shell">
+    <header class="topbar">
+      <label class="search">
+        <span aria-hidden="true">⌕</span>
+        <input type="search" placeholder="메뉴, 화면, 보고서 검색" />
+      </label>
+
+      <div class="top-controls">
+        <button class="select-btn">전체 시스템 <span>⌄</span></button>
+        <button class="select-btn"><i class="live-dot"></i>실시간 <span>⌄</span></button>
+      </div>
+
+      <div class="top-meta">
+        <time>2026.06.11 (수)</time>
+        <time id="clock">10:30:45</time>
+        <button class="icon-btn" aria-label="새로고침">↻</button>
+        <button class="icon-btn notification" aria-label="알림">♧<b>12</b></button>
+        <div class="profile">
+          <div class="avatar" aria-hidden="true">김</div>
+          <div>
+            <strong>김미래 차장</strong>
+            <small>운영기획팀</small>
+          </div>
+          <span>⌄</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1>안녕하세요, 김미래 차장님! 👋</h1>
+      <p>오늘도 시스템이 안정적으로 운영되고 있습니다.</p>
+    </section>
+
+    <section class="dashboard-grid">
+      <article class="card kpi">
+        <div class="card-head"><span class="badge purple">◷</span><h2>시스템 가동률</h2><button>↗</button></div>
+        <strong class="kpi-value">99.98%</strong>
+        <p class="trend">전일 대비 <em>▲ 0.02%p</em></p>
+        <svg class="spark" viewBox="0 0 220 48" aria-label="가동률 추이"><polyline points="0,31 18,34 36,27 54,33 72,25 90,30 108,28 126,34 144,24 162,29 180,26 198,31 220,25"/></svg>
+      </article>
+
+      <article class="card kpi">
+        <div class="card-head"><span class="badge red">△</span><h2>현재 장애 건수</h2><button>↗</button></div>
+        <strong class="kpi-value">3 <small>건</small></strong>
+        <div class="incident-summary"><span>긴급 <b>1</b></span><span>주의 <b>1</b></span><span>경고 <b>1</b></span></div>
+      </article>
+
+      <article class="card kpi wide-kpi">
+        <div class="card-head"><span class="badge purple">♙</span><h2>일일 접속자 수</h2><button>↗</button></div>
+        <strong class="kpi-value">245,812 <small>명</small></strong>
+        <p class="trend">전일 대비 <em>▲ 4.21%</em></p>
+        <svg class="spark" viewBox="0 0 360 48" aria-label="접속자 추이"><polyline points="0,31 20,35 40,26 60,33 80,25 100,31 120,24 140,35 160,26 180,33 200,24 220,30 240,25 260,33 280,26 300,31 320,25 340,30 360,24"/></svg>
+      </article>
+
+      <article class="card kpi">
+        <div class="card-head"><span class="badge blue">✓</span><h2>체결 건수</h2><button>↗</button></div>
+        <strong class="kpi-value">32,842 <small>건</small></strong>
+        <p class="trend">전일 대비 <em>▲ 3.2%</em></p>
+        <svg class="spark blue-line" viewBox="0 0 220 48"><polyline points="0,18 20,30 40,22 60,27 80,25 100,28 120,18 140,25 160,29 180,21 200,30 220,22"/></svg>
+      </article>
+
+      <article class="card kpi">
+        <div class="card-head"><span class="badge green">♙</span><h2>신규 계좌 개설</h2><button>↗</button></div>
+        <strong class="kpi-value">1,245 <small>건</small></strong>
+        <p class="trend">전일 대비 <em>▲ 8.34%</em></p>
+        <svg class="spark green-line" viewBox="0 0 220 48"><polyline points="0,26 20,22 40,30 60,20 80,26 100,24 120,29 140,26 160,20 180,28 200,23 220,25"/></svg>
+      </article>
+
+      <article class="card sales">
+        <div class="card-head"><h2>매출</h2><small>이번 달 vs 지난 달</small><button>↗</button></div>
+        <div class="bar-chart" aria-label="월별 매출">
+          <div><span style="height:82%"></span><small>1</small></div>
+          <div><span style="height:46%"></span><small>3</small></div>
+          <div><span style="height:64%"></span><small>4</small></div>
+          <div><span style="height:54%"></span><small>5</small></div>
+          <div><span style="height:88%"></span><small>7</small></div>
+          <div><span style="height:73%"></span><small>8</small></div>
+        </div>
+      </article>
+
+      <article class="card issues">
+        <div class="card-head"><h2>오늘의 주요 이슈</h2><a href="#">전체 이슈 보기 ›</a></div>
+        <ul>
+          <li><span class="severity urgent">긴급</span><div><strong>HTS 시세 지연 발생</strong><small>서울/영등포 지역 시세 지연 현상 감지</small></div><time>10:15</time></li>
+          <li><span class="severity caution">주의</span><div><strong>특정 종목 주문 실패 증가</strong><small>삼성전자, SK하이닉스 등 주문 실패 증가</small></div><time>09:42</time></li>
+          <li><span class="severity caution">주의</span><div><strong>대량 출금 발생</strong><small>고객 A계좌에서 대량 출금 발생</small></div><time>09:30</time></li>
+          <li><span class="severity info">정보</span><div><strong>정기 시스템 점검 안내</strong><small>통합 인증 시스템 점검 (06/15 02:00~04:00)</small></div><time>-</time></li>
+        </ul>
+      </article>
+
+      <article class="card service-chart">
+        <div class="card-head"><h2>실시간 서비스 이용 현황 ⓘ</h2><button class="mini-select">실시간⌄</button></div>
+        <div class="legend"><span class="l-blue">HTS 접속자</span><span class="l-purple">MTS 접속자</span><span class="l-green">주문 건수</span></div>
+        <svg viewBox="0 0 640 270" class="line-chart" aria-label="실시간 서비스 이용 현황">
+          <g class="grid-lines">
+            <line x1="55" y1="40" x2="620" y2="40"/><line x1="55" y1="90" x2="620" y2="90"/><line x1="55" y1="140" x2="620" y2="140"/><line x1="55" y1="190" x2="620" y2="190"/><line x1="55" y1="240" x2="620" y2="240"/>
+          </g>
+          <polyline class="green-series" points="55,165 165,100 275,70 385,105 495,75 605,140"/>
+          <polyline class="blue-series" points="55,205 165,150 275,130 385,160 495,135 605,190"/>
+          <polyline class="purple-series" points="55,235 165,210 275,195 385,215 495,190 605,225"/>
+          <g class="axis-labels"><text x="45" y="250">0</text><text x="20" y="195">100K</text><text x="20" y="145">200K</text><text x="20" y="95">300K</text><text x="20" y="45">400K</text><text x="48" y="265">09:00</text><text x="158" y="265">09:15</text><text x="268" y="265">09:30</text><text x="378" y="265">09:45</text><text x="488" y="265">10:00</text><text x="598" y="265">10:15</text></g>
+        </svg>
+        <p class="updated">마지막 업데이트 <b>10:30:45</b> <span>◆ 실시간</span></p>
+      </article>
+
+      <article class="card system-status">
+        <div class="card-head"><h2>시스템 상태</h2><a href="#">전체 시스템 상태 보기 ›</a></div>
+        <ul>
+          <li><i class="ok"></i>주문 시스템 <span class="status ok-bg">정상</span></li>
+          <li><i class="ok"></i>체결 시스템 <span class="status ok-bg">정상</span></li>
+          <li><i class="ok"></i>계좌 시스템 <span class="status ok-bg">정상</span></li>
+          <li><i class="warn"></i>시세 시스템 <span class="status warn-bg">주의</span></li>
+          <li><i class="ok"></i>HTS <span class="status ok-bg">정상</span></li>
+          <li><i class="ok"></i>MTS <span class="status ok-bg">정상</span></li>
+          <li><i class="ok"></i>통합 인증 <span class="status ok-bg">정상</span></li>
+          <li><i class="bad"></i>배치 처리 <span class="status bad-bg">장애</span></li>
+        </ul>
+      </article>
+
+      <article class="card resources">
+        <div class="card-head"><h2>시스템 자원 사용률</h2><time>10:30 기준</time></div>
+        <div class="resource-grid">
+          <div class="resource"><h3>CPU</h3><div class="donut" style="--p:28;--c:#38b59a"><span>28%<small>사용률</small></span></div><p>(8 Core)</p></div>
+          <div class="resource"><h3>메모리</h3><div class="donut" style="--p:52;--c:#367ff4"><span>52%<small>사용률</small></span></div><p>32GB / 64GB</p></div>
+          <div class="resource"><h3>디스크</h3><div class="donut" style="--p:41;--c:#28a57b"><span>41%<small>사용률</small></span></div><p>1.2TB / 3.0TB</p></div>
+          <div class="resource"><h3>네트워크</h3><div class="donut" style="--p:18;--c:#6228d8"><span>18%<small>사용률</small></span></div><p>1.2Gbps / 10Gbps</p></div>
+        </div>
+      </article>
+    </section>
+
+    <nav class="mobile-nav" aria-label="모바일 하단 메뉴">
+      <button class="active"><span>▦</span>대시보드</button>
+      <button><span>▣</span>시스템 운영</button>
+      <button><span>▤</span>프로젝트</button>
+      <button><span>♧</span>알림센터</button>
+      <button><span>•••</span>더보기</button>
+    </nav>
+  </main>
+
+  <script src="./js/dashboard.js"></script>
+</body>
+</html>
